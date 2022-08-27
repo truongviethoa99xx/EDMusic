@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-color: #fff;
+    --theme-color: #1e1e1e;
+    --text-color: #fff;
+}
+
+.navbar.navbar-expand-xl.main-navbar {
+    background-color: var(--theme-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-main-logo {
+    width: 170px;
+    height: 40px;
+    position: relative;
+    bottom: 4px;
+}
+
+.navbar-search-form {
+    margin-left: 16px;
+    position: relative;
+    top: 8px;
+}
+
+#change-theme-background {
+    position: relative;
+    top: 4px;
+}
+
+/* Search */
+#navbar-container-search {
+    position: relative;
+}
+
+.header-search {
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search {
+    margin-left: 28px;
+}
+
+.navbar-search {
+    width: 300px;
+    height: 30px;
+    padding: 16px 68px 16px 16px;
+    border-radius: 50px;
+    border: 1px solid #000000ad;
+}
+
+.search .input-bar button {
+    background: transparent;
+    border: 0;
+    border-radius: 50%;
+    color: #444;
+    font-size: 1.25rem;
+    margin: 0;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    transition: background-color, color;
+    transition-duration: 0.25s;
+    box-shadow: 0 0 2rem #0000;
+}
+
+.search .input-bar button:hover {
+    background: #eee;
+}
+
+.search .input-bar button:focus {
+    background: #444;
+    color: #fff;
+}
+
+.search .input-bar button:active,
+.search .input-bar button.active {
+    background: #000;
+}
+
+.search .input-bar button#dictate {
+    transform: scale(0);
+    transition: transform 0.5s;
+    transition-delay: 1s;
+    visibility: hidden;
+}
+
+.search .input-bar button#dictate svg {
+    display: none;
+    margin: auto auto;
+}
+
+.search .input-bar button#dictate.show {
+    visibility: visible;
+    transform: scale(1);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 12px;
+    bottom: 14px;
+}
+
+.search .input-bar button#dictate.active i {
+    display: none;
+}
+
+.search .input-bar button#dictate.active svg {
+    display: block;
+}
+
+.search .input-bar button:last-child {
+    margin-right: 0.5rem;
+    position: absolute;
+    bottom: 14px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (prefers-reduced-motion) {
+    * {
+        transition: none !important;
+        transition-delay: 0s !important;
+    }
+}
+
+/* animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

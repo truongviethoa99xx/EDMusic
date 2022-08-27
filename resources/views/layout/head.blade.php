@@ -1,5 +1,5 @@
 <head>
-    <title>Dịch vụ tiện ích tài chính cá nhân</title>
+    <title>Nghe nhạc phê - Thỏa đam mê</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
