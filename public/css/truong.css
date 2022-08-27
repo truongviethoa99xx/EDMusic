@@ -1,0 +1,148 @@
+p{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin: 4px 0;
+}
+
+body{
+    background-color: #432275;
+    color: #fff;
+}
+
+#play-music-listen .play-left-header{
+    text-align: center;
+}
+
+#play-music-listen #play-img-rotate{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#play-music-listen #play-img-rotate img{
+    transition: all 1s linear;
+    width: 400px;
+}
+
+
+
+#play-music-listen #play-img-rotate img.active{
+    animation: music-play 6s infinite linear;
+    border-radius: 50%;
+}
+
+@keyframes music-play {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+#play-music-listen .media-content{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#play-music-listen .media-name{
+    font-weight: 600;
+}
+
+#play-music-listen .media-action button{
+    background-color: rebeccapurple;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 60px;
+    text-transform: uppercase;
+}
+
+#play-music-listen .media-action button i{
+    margin-right: 8px;
+}
+
+#play-music-listen .level{
+    margin-top: 15px;
+}
+
+#play-music-listen .level i{
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+
+/*play-right*/
+.media-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 8px 0;
+}
+
+.media-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.media-left img{
+    margin-left: 8px;
+}
+
+.media-left .media-info{
+    margin-left: 8px;
+}
+
+.list-song{
+    margin-top: 20px;
+}
+
+.list-song .list{
+    height: 400px;
+    overflow-y: auto;
+}
+
+.list-song .list .play-item{
+    margin-top: 8px;
+    padding: 8px 0 ;
+}
+
+.media-left img{
+    width: 60px;
+}
+
+
+/*test swiper*/
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
