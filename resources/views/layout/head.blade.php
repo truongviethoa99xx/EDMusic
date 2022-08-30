@@ -35,8 +35,10 @@
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="..\files\assets\css\style.css">
     <link rel="stylesheet" type="text/css" href="..\files\assets\css\jquery.mCustomScrollbar.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
     <!-- css Custom -->
     <link rel="stylesheet" href="{{asset('css/style.css')}}" />
     <link rel="stylesheet" href="{{asset('css/quynh.css')}}" />
     <link rel="stylesheet" href="{{asset('css/huy.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/thanh.css')}}" />
 </head>
