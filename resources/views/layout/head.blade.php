@@ -1,5 +1,5 @@
 <head>
-    <title>EDMusic</title>
+    <title>Nghe nhạc phê - Thỏa đam mê</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
@@ -35,9 +35,14 @@
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="..\files\assets\css\style.css">
     <link rel="stylesheet" type="text/css" href="..\files\assets\css\jquery.mCustomScrollbar.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
     <!-- css Custom -->
     <link rel="stylesheet" href="{{asset('css/style.css')}}" />
     <link rel="stylesheet" href="{{asset('css/quynh.css')}}" />
     <link rel="stylesheet" href="{{asset('css/huy.css')}}" />
+<<<<<<< HEAD
     <link rel="stylesheet" href="{{asset('css/truong.css')}}" />
+=======
+    <link rel="stylesheet" href="{{asset('css/thanh.css')}}" />
+>>>>>>> 019d8249e3f979f0aae8465ab12d06edf7a61d89
 </head>

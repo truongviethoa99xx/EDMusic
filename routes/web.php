@@ -13,16 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
 /**
  * Trans: Home
  */
 Route::namespace('Home')->group(function () {
-    Route::get("home", "HomeController@index");
+    Route::get("/home", "HomeController@index");
 });
 
 /**
