@@ -2,7 +2,7 @@ $(function () {
     startSearch();
     $("#change-theme-background").on("click", function () {
         console.log("change-theme-background");
-        document.documentElement.style.setProperty("--theme-color", "pink");
+        document.documentElement.style.setProperty("--theme-color", "#130118f5");
     });
 });
 
@@ -14,7 +14,6 @@ function startSearch() {
     const btnSearch = search.querySelector("#search");
     let listening = false;
     var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
-
     /*
      * Sau 1s hiển thị mic
      */

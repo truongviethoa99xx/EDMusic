@@ -12,7 +12,7 @@
     <div class="pcoded-container navbar-wrapper">
         <div class="navbar-header-pin">
             @include('layout.navbar')
-{{--            @include('layout.navbar_second')--}}
+            @include('layout.sidebar')
         </div>
         <div class="pcoded-main-container">
             <div class="pcoded-wrapper">
