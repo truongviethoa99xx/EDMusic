@@ -5,24 +5,47 @@ p{
 }
 
 body{
-    background-color: #432275;
+    background-color: rgba(30,21,47,0.9019607843137255);
     color: #fff;
+}
+
+#play-music-listen{
+    padding: 1%;
+}
+
+#play-music-listen .play-left{
 }
 
 #play-music-listen .play-left-header{
     text-align: center;
+
 }
+
+
 
 #play-music-listen #play-img-rotate{
     border-radius: 20px;
-    overflow: hidden;
+    position: relative;
 }
 
 #play-music-listen #play-img-rotate img{
-    transition: all 1s linear;
-    width: 400px;
+    transition: all .3s linear;
+    width: 100%;
+    border-radius: 10px;
 }
 
+#btn-action{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#btn-action i{
+    display: block;
+    font-size: 20px;
+}
 
 
 #play-music-listen #play-img-rotate img.active{
@@ -49,6 +72,13 @@ body{
     font-weight: 600;
 }
 
+#play-music-listen .media-action{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 #play-music-listen .media-action button{
     background-color: rebeccapurple;
     border: none;
@@ -63,16 +93,30 @@ body{
 }
 
 #play-music-listen .level{
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
-#play-music-listen .level i{
-    font-size: 20px;
+.level i{
+    font-size: 23px;
     margin: 0 10px;
+    padding: 8px;
+    border-radius: 50%;
+}
+.level{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.level i:hover{
+    background-color: grey;
+    cursor: pointer;
+}
 
 /*play-right*/
+.play-right{
+    width: 100%;
+}
 .media-head{
     display: flex;
     justify-content: space-between;
@@ -87,8 +131,68 @@ body{
     align-items: center;
 }
 
-.media-left img{
-    margin-left: 8px;
+.media-left-img{
+    position: relative;
+
+}
+
+.wave-box .wave{
+    height: 20px;
+    width: 5px;
+    background-color: #fff;
+    margin-right: 1px;
+    display: inline-block;
+    transform-origin: bottom center;
+    animation: waving 1s ease-in-out infinite;
+}
+
+
+
+.wave-box .wave1{
+    animation-delay: 0.1s;
+}
+
+.wave-box .wave2{
+    animation-delay: 0.3s;
+}
+
+.wave-box .wave3{
+    animation-delay: .5s;
+}
+
+.wave-box .wave4{
+    animation-delay: .8s;
+}
+
+.wave-box{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes waving {
+    0%{
+        transform: scaleY(0.1);
+        background-color: #fff;
+    }
+    50%{
+        transform: scaleY(1);
+        background-color: #fff;
+    }
+    100%{
+        transform: scaleY(0.1);
+        background-color: transparent;
+    }
+}
+
+.media-left .media-left-img img{
+    margin: 0 8px;
 }
 
 .media-left .media-info{
@@ -105,16 +209,44 @@ body{
 }
 
 .list-song .list .play-item{
-    margin-top: 8px;
-    padding: 8px 0 ;
+    padding: 8px;
+}
+
+.list-song .list .play-item:hover{
+    background-color: rgba(255,255,255,.3);
 }
 
 .media-left img{
     width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.media-ablum{
+    flex: 1;
+    margin-left: 20%;
+}
+
+.media-icon{
+    display: none;
+}
+
+.media-icon i{
+    font-size: 16px;
+    margin-right: 15px;
 }
 
 
-/*test swiper*/
+.list-song .list .play-item:hover .media-right .media-icon{
+    display: block;
+}
+
+.list-song .list .play-item:hover .media-right p{
+    display: none;
+}
+
+
+    /*test swiper*/
 .swiper {
     width: 100%;
     height: 100%;
@@ -123,10 +255,8 @@ body{
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
+    background: transparent;
+     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -138,11 +268,40 @@ body{
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .swiper-slide img {
-    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
+
+.swiper-slide-hover{
+    position: absolute;
+    right: 0;left: 0;
+    top: 0;bottom: 0;
+    transition: all .2s linear;
+    background-color: rgba(0,0,0, .7);
+    opacity: 0;
+    border-radius: 10px;
+}
+
+.swiper-slide:hover .swiper-slide-hover{
+    opacity: .8;
+    cursor: pointer;
+}
+
+/*.swiper-slide img:hover{*/
+/*    transform: scale(1.2);*/
+/*}*/
+
+
+
+
+
+
+
+

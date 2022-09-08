@@ -1,5 +1,5 @@
 <head>
-    <title>Dịch vụ tiện ích tài chính cá nhân</title>
+    <title>EDMusic</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
@@ -39,4 +39,5 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}}" />
     <link rel="stylesheet" href="{{asset('css/quynh.css')}}" />
     <link rel="stylesheet" href="{{asset('css/huy.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/truong.css')}}" />
 </head>
