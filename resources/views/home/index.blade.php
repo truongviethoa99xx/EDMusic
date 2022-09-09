@@ -1,7 +1,7 @@
 @extends('layout.index')
 @section('content')
 <div id="home-main-layout" class="home-main-layout">
-    @include('layout.slider')
+    @include('element.singer_card')
 </div>
 @endsection
 @push('scripts')
