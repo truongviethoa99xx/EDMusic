@@ -9,6 +9,7 @@
     --white-color: #fff;
     --theme-color: #1e1e1e;
     --text-color: #fff;
+    --background-color: #545454;
 }
 
 /* Navbar */
@@ -531,6 +532,32 @@
 .side-bar.collapse .inbox-icon .status,
 .side-bar.collapse .chat-item-avatar-wrapper::before {
     opacity: 1;
+}
+
+/* main content */
+.pcoded-main-container {
+    width: calc(100% - 300px);
+    height: calc(100vh - 79px);
+    position: relative;
+    overflow: auto;
+    background-color: var(--background-color);
+    margin-left: 300px !important;
+    margin-top: 79px !important;
+}
+
+/* Slider */
+#main-carousel {
+    height: 250px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 20px;
 }
 
 

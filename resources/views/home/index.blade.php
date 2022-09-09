@@ -1,6 +1,7 @@
 @extends('layout.index')
 @section('content')
 <div id="home-main-layout" class="home-main-layout">
+    @include('layout.slider')
 </div>
 @endsection
 @push('scripts')

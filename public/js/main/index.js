@@ -1,8 +1,8 @@
 $(function () {
     startSearch();
     $("#change-theme-background").on("click", function () {
-        console.log("change-theme-background");
         document.documentElement.style.setProperty("--theme-color", "#130118f5");
+        document.documentElement.style.setProperty("--background-color", "#2a1330f5");
     });
 });
 
