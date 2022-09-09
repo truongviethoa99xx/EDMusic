@@ -33,10 +33,14 @@
     <link rel="stylesheet" type="text/css" href="..\files\assets\pages\data-table\css\buttons.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="..\files\bower_components\datatables.net-responsive-bs4\css\responsive.bootstrap4.min.css">
     <!-- Style.css -->
+
     <link rel="stylesheet" type="text/css" href="..\files\assets\css\style.css">
     <link rel="stylesheet" type="text/css" href="..\files\assets\css\jquery.mCustomScrollbar.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
     <!-- css Custom -->
+    <link rel="stylesheet" href="{{asset('css/reponsive/grid.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/reponsive/reponsive.css')}}" />
+
     <link rel="stylesheet" href="{{asset('css/style.css')}}" />
     <link rel="stylesheet" href="{{asset('css/quynh.css')}}" />
     <link rel="stylesheet" href="{{asset('css/huy.css')}}" />

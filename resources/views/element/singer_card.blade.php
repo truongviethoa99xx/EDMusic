@@ -1,110 +1,40 @@
-<style>
-    .card {
-        position: relative;
-        width: 300px;
-        height: 150px;
-        margin: 20px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        border-radius: 20px;
-        background: linear-gradient(135deg,#d41e31,#491f8f);
-        margin-top: 100px;
-    }
-
-    .card img {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        height: 200px;
-        transform: translateX(-50%);
-        transition: 0.5s;
-    }
-
-    .card:hover img {
-        left: 80%;
-        height: 250px;
-    }
-
-    .card .content {
-        position: relative;
-        width: 50%;
-        left: 20%;
-        padding: 20px 20px 20px 40px;
-        opacity: 0;
-        vasability: hidden;
-        transition: 0.5s;
-        position: absolute;
-        left: 10px !important;
-    }
-
-    .card:hover .content {
-        opacity: 1;
-        left: 0%;
-        vasability: visible;
-    }
-
-    .card .content h2 {
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 2.5em;
-        line-height: 1em;
-    }
-
-    .card .content p {
-        color: #fff;
-    }
-
-    .card .content a {
-        position: relative;
-        display: inline-block;
-        color: #111;
-        padding: 10px 20px;
-        border-radius: 10px;
-        background: #fff;
-        margin-top: 10px;
-    }
-
-    @media (max-width: 991px) {
-        .card {
-            position: relative;
-            width: auto;
-            min-width: 600px;
-            transition: .5s;
-            align-items: flex-start;
-        }
-
-        .card:hover {
-            height: 600px;
-        }
-
-        .card:hover img {
-            left: 50%;
-            height: 350px;
-        }
-
-        .card .content {
-            width: 100%;
-            left: 0;
-            padding: 40px;
-        }
-    }
-
-    @media (max-width: 420px) {
-        .card .content {
-            padding: 30px;
-        }
-
-        .card:hover img {
-            height: 300px;
-        }
-    }
-</style>
-<div class="card">
-   <div class="content">
-       <h2>Coi chừng t ă</h2>
-       <p>Ca sĩ như c</p>
-//        <a href="#">Read More</a>
+<div class="grid">
+    <div class="row" style="padding: 20px; margin-top: 100px;">
+        <div class="singer-profile-hidden col l-3 m-3 c-3">
+            <div class="card">
+                <div class="content">
+                    <h2>Justin bieber</h2>
+                </div>
+                <img src="https://o.remove.bg/downloads/d84269a2-b18c-43d5-8f17-2b3fc42162fe/justin-bieber-comedy-central-roast-celebrity-png-favpng-wjVde1FPn0Gd6FpWL8cLjqhr7_t-removebg-preview.png" alt="" />
+            </div>
+        </div>
+        <div class="singer-profile-hidden col l-3 m-3 c-3">
+            <div class="card">
+                <div class="content">
+                    <h2>Ly Ly</h2>
+                </div>
+                <img src="https://o.remove.bg/downloads/a625e6aa-e369-492e-91e0-c18f1510329c/tieu-su-ca-si-ho-viet-trung-9814-removebg-preview.png" alt="" />
+            </div>
+        </div>
+        <div class="singer-profile-hidden col l-3 m-3 c-3">
+            <div class="card">
+                <div class="content">
+                    <h2>Justin bieber</h2>
+                </div>
+                <img src="https://o.remove.bg/downloads/22fe3244-c576-408d-815a-4d064bccf488/24miu-le-la-ai-2-phunutoday-2-0001-removebg-preview.png" alt="" />
+            </div>
+        </div>
+        <div class="singer-profile-hidden col l-3 m-3 c-3">
+            <div class="card">
+                <div class="content">
+                    <h2>Justin bieber</h2>
+                </div>
+                <img src="https://o.remove.bg/downloads/d1a192c6-e514-4b4a-9822-8f6582dbca69/photo-1-1593589382973739051542-removebg-preview.png" alt="" />
+            </div>
+        </div>
     </div>
-     <img src="https://o.remove.bg/downloads/d84269a2-b18c-43d5-8f17-2b3fc42162fe/justin-bieber-comedy-central-roast-celebrity-png-favpng-wjVde1FPn0Gd6FpWL8cLjqhr7_t-removebg-preview.png" alt="" />
 </div>
+
+<iframe src="https://api.spotify.com/v1/albums/0tGPJ0bkWOUmH7MEOR77qc" title="W3Schools Free Online Web Tutorials">
+</iframe>
+<audio src="https://api.spotify.com/v1/albums/0tGPJ0bkWOUmH7MEOR77qc" autoplay controls></audio>
