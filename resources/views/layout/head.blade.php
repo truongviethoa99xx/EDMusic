@@ -40,9 +40,6 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}}" />
     <link rel="stylesheet" href="{{asset('css/quynh.css')}}" />
     <link rel="stylesheet" href="{{asset('css/huy.css')}}" />
-<<<<<<< HEAD
     <link rel="stylesheet" href="{{asset('css/truong.css')}}" />
-=======
     <link rel="stylesheet" href="{{asset('css/thanh.css')}}" />
->>>>>>> 019d8249e3f979f0aae8465ab12d06edf7a61d89
 </head>
