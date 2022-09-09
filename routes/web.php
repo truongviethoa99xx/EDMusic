@@ -45,3 +45,10 @@ Route::namespace('News')->group(function () {
 Route::namespace('Upload_audio')->group(function () {
     Route::get("upload", "UploadAudioController@index");
 });
+
+/**
+ * Trans: Media play Fixed
+ */
+Route::namespace('Media_fixed')->group(function () {
+    Route::get("fixed", "MediaFixedController@index");
+});
