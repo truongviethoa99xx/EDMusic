@@ -5,11 +5,21 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+p {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block;
+}
+
 :root {
     --white-color: #fff;
     --theme-color: #1e1e1e;
     --text-color: #fff;
     --background-color: #545454;
+}
+
+html {
+    overflow: hidden !important;
 }
 
 /* Navbar */
@@ -539,10 +549,20 @@
     width: calc(100% - 300px);
     height: calc(100vh - 79px);
     position: relative;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     background-color: var(--background-color);
     margin-left: 300px !important;
     margin-top: 79px !important;
+    padding: 20px;
+}
+
+.pcoded-main-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.pcoded-main-container::-webkit-scrollbar-thumb {
+    background-color: #fff;
 }
 
 /* Slider */
