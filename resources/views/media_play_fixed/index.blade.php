@@ -41,4 +41,5 @@
     </div>
 </body>
 @include('layout.script')
+<script src="js/truong.js"></script>
 </html>

@@ -1,16 +1,7 @@
-p{
-    margin-bottom: 0;
-    padding-bottom: 0;
-    margin: 4px 0;
-}
-
-body{
-    background-color: rgba(30,21,47,0.9019607843137255);
-    color: #fff;
-}
 
 #play-music-listen{
-    padding: 1%;
+    color: #fff;
+    padding-top: 10px;
 }
 
 #play-music-listen .play-left{
@@ -127,7 +118,6 @@ body{
 
 .media-left{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -136,7 +126,7 @@ body{
 
 }
 
-.wave-box .wave{
+.wave-box .wave-item{
     height: 20px;
     width: 5px;
     background-color: #fff;
@@ -197,6 +187,18 @@ body{
 
 .media-left .media-info{
     margin-left: 8px;
+}
+
+.list{
+    overflow-x: hidden;
+}
+
+.list::-webkit-scrollbar{
+    width: 6px;
+}
+
+.list::-webkit-scrollbar-thumb {
+    background-color: #dfdfdf;
 }
 
 .list-song{
