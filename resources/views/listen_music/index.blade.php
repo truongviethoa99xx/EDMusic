@@ -1,17 +1,14 @@
-<!doctype html>
-<html lang="en">
-   @include('layout.head')
+@extends('layout.index')
+@section('content')
    <link
        rel="stylesheet"
        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
    />
-<body>
 <div id="play-music-listen">
     <div class="play-container row container-fluid">
         <div class="play-left col-lg-4">
             <div class="play-left-header">
                 <div id="play-img-rotate">
-
                     <img id="img-action" src="https://photo-resize-zmp3.zmdcdn.me/w600_r1x1_webp/cover/3/d/f/4/3df4a79c75c3407c9866d16c41cd57d6.jpg">
                 </div>
                 <div class="media-content">
@@ -61,147 +58,7 @@
 
                 <div class="list-song">
                     <h4>co the ban quan tam</h4>
-                    <div class="list">
-                        <!-- item -->
-                        <div class="play-item media-head">
-                            <div class="media-left">
-                                <i class='bx bxs-music' ></i>
-                                <div class="media-left-img">
-                                    <img src="https://photo-resize-zmp3.zmdcdn.me/w600_r1x1_webp/cover/3/d/f/4/3df4a79c75c3407c9866d16c41cd57d6.jpg" alt="">
-                                </div>
-                                <div class="media-info">
-                                    <p class="title">
-                                        Lorem ipsum dolor sit amet, consectetur.
-                                    </p>
-                                    <p class="singer">Johnny Dang</p>
-                                </div>
-                            </div>
-                            <div class="media-ablum">
-                                if you never go alone
-                            </div>
-
-                            <div class="media-right">
-                                <div class="media-icon">
-                                    <i class='bx bxs-microphone' ></i>
-                                    <i class='bx bx-heart' ></i>
-                                    <i class='bx bx-dots-horizontal-rounded' ></i>
-                                </div>
-                                <p>03:00</p>
-                            </div>
-                        </div>
-                        <!-- item -->
-                        <div class="play-item media-head">
-                            <div class="media-left">
-                                <i class='bx bxs-music' ></i>
-                                <div class="media-left-img">
-                                    <img src="https://photo-resize-zmp3.zmdcdn.me/w600_r1x1_webp/cover/3/d/f/4/3df4a79c75c3407c9866d16c41cd57d6.jpg" alt="">
-                                </div>
-                                <div class="media-info">
-                                    <p class="title">
-                                        Lorem ipsum dolor sit amet, consectetur.
-                                    </p>
-                                    <p class="singer">Johnny Dang</p>
-                                </div>
-                            </div>
-                            <div class="media-ablum">
-                                if you never go alone
-                            </div>
-
-                            <div class="media-right">
-                                <div class="media-icon">
-                                    <i class='bx bxs-microphone' ></i>
-                                    <i class='bx bx-heart' ></i>
-                                    <i class='bx bx-dots-horizontal-rounded' ></i>
-                                </div>
-                                <p>03:00</p>
-                            </div>
-                        </div>
-                        <!-- item -->
-                        <div class="play-item media-head">
-                            <div class="media-left">
-                                <i class='bx bxs-music' ></i>
-                                <div class="media-left-img">
-                                    <img src="https://photo-resize-zmp3.zmdcdn.me/w600_r1x1_webp/cover/3/d/f/4/3df4a79c75c3407c9866d16c41cd57d6.jpg" alt="">
-                                </div>
-                                <div class="media-info">
-                                    <p class="title">
-                                        Lorem ipsum dolor sit amet, consectetur.
-                                    </p>
-                                    <p class="singer">Johnny Dang</p>
-                                </div>
-                            </div>
-                            <div class="media-ablum">
-                                if you never go alone
-                            </div>
-
-                            <div class="media-right">
-                                <div class="media-icon">
-                                    <i class='bx bxs-microphone' ></i>
-                                    <i class='bx bx-heart' ></i>
-                                    <i class='bx bx-dots-horizontal-rounded' ></i>
-                                </div>
-                                <p>03:00</p>
-                            </div>
-                        </div>
-                        <!-- item -->
-                        <div class="play-item media-head">
-                            <div class="media-left">
-                                <i class='bx bxs-music' ></i>
-                                <div class="media-left-img">
-                                    <img src="https://photo-resize-zmp3.zmdcdn.me/w600_r1x1_webp/cover/3/d/f/4/3df4a79c75c3407c9866d16c41cd57d6.jpg" alt="">
-                                </div>
-                                <div class="media-info">
-                                    <p class="title">
-                                        Lorem ipsum dolor sit amet, consectetur.
-                                    </p>
-                                    <p class="singer">Johnny Dang</p>
-                                </div>
-                            </div>
-                            <div class="media-ablum">
-                                if you never go alone
-                            </div>
-
-                            <div class="media-right">
-                                <div class="media-icon">
-                                    <i class='bx bxs-microphone' ></i>
-                                    <i class='bx bx-heart' ></i>
-                                    <i class='bx bx-dots-horizontal-rounded' ></i>
-                                </div>
-                                <p>03:00</p>
-                            </div>
-                        </div>
-                        <!-- item -->
-                        <div class="play-item media-head">
-                            <div class="media-left">
-                                <i class='bx bxs-music' ></i>
-                                <div class="media-left-img">
-                                    <img src="https://photo-resize-zmp3.zmdcdn.me/w600_r1x1_webp/cover/3/d/f/4/3df4a79c75c3407c9866d16c41cd57d6.jpg" alt="">
-                                </div>
-                                <div class="media-info">
-                                    <p class="title">
-                                        Lorem ipsum dolor sit amet, consectetur.
-                                    </p>
-                                    <p class="singer">Johnny Dang</p>
-                                </div>
-                            </div>
-                            <div class="media-ablum">
-                                if you never go alone
-                            </div>
-
-                            <div class="media-right">
-                                <div class="media-icon">
-                                    <i class='bx bxs-microphone' ></i>
-                                    <i class='bx bx-heart' ></i>
-                                    <i class='bx bx-dots-horizontal-rounded' ></i>
-                                </div>
-                                <p>03:00</p>
-                            </div>
-                        </div>
-
-
-
-
-
+                    <div class="list" id="listSongCare">
                     </div>
                 </div>
             </div>
@@ -296,12 +153,11 @@
             <div class="swiper-pagination"></div>
         </div>
     </div>
-
-
-
 </div>
-</body>
-@include('layout.script')
-   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-   <script src="js/truong.js"></script>
-</html>
+@endsection
+@push('scripts')
+    <script src="js/truong.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    {{--    <!-- <script type="text/javascript" src="{{ asset('js\dashboard\index.js')}}"></script> -->--}}
+@endpush
