@@ -35,6 +35,3 @@
     </div>
 </div>
 
-<iframe src="https://api.spotify.com/v1/albums/0tGPJ0bkWOUmH7MEOR77qc" title="W3Schools Free Online Web Tutorials">
-</iframe>
-<audio src="https://api.spotify.com/v1/albums/0tGPJ0bkWOUmH7MEOR77qc" autoplay controls></audio>
