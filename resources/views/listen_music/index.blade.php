@@ -174,6 +174,7 @@
         </div>
     </div>
 </div>
+@include('media_play_fixed.index')
 @endsection
 @push('scripts')
 <script src="js/truong.js"></script>

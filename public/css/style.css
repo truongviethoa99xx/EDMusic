@@ -13,9 +13,9 @@ p {
 
 :root {
     --white-color: #fff;
-    --theme-color: #1e1e1e;
+    --theme-color: #1c2a49;
     --text-color: #fff;
-    --background-color: #545454;
+    --background-color: #101f3f;
 }
 
 html {
@@ -547,14 +547,14 @@ html {
 /* main content */
 .pcoded-main-container {
     width: calc(100% - 300px);
-    height: calc(100vh - 79px);
+    height: calc(100vh - 169px);
     position: relative;
     overflow-y: auto;
     overflow-x: hidden;
     background-color: var(--background-color);
     margin-left: 300px !important;
-    margin-top: 79px !important;
-    padding: 20px;
+    /*margin-bottom: 90px !important;*/
+    padding: 90px 20px 20px 20px !important;
 }
 
 .pcoded-main-container::-webkit-scrollbar {
@@ -675,6 +675,60 @@ html {
     }
 }
 
+/* Fixed bottom */
+.media-fixed {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    left: 0;
+    z-index: 99;
+    background-color: var(--background-color);
+    height: 90px;
+    border-top: #ffffff1a 1px solid;
+    align-items: center;
+}
+
+.media-fixed-wave {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: flex-end;
+    margin: 0 10px;
+}
+
+.media-fixed-wave .media-fixed-wave-item{
+    width: 3px;
+    height: 10px;
+    background-color: #36e2ec;
+    margin-right: 3px;
+    border-radius: 10px 10px 0 0;
+    animation: unset;
+}
+
+.media-fixed-wave .media-fixed-wave-item:nth-child(2){
+    height: 13px;
+    margin-right: 3px;
+}
+
+.media-fixed-wave .media-fixed-wave-item:nth-child(3){
+    height: 8px;
+}
+
+/* Wave active */
+.media-fixed-wave.active .media-fixed-wave-item {
+    animation: wave-fixed .5s infinite linear;
+}
+
+.media-fixed-wave.active .media-fixed-wave-item:nth-child(2){
+    animation-delay: .4s;
+}
+
+.media-fixed-wave.active .media-fixed-wave-item:nth-child(3){
+    animation-delay: .8s;
+}
 
 @media (max-width: 420px) {
     .card .content {
@@ -700,5 +754,17 @@ html {
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes wave-fixed {
+    0% {
+        height: 10px;
+    }
+    50% {
+        height: 15px;
+    }
+    100% {
+        height: 8px;
     }
 }
